@@ -54,7 +54,7 @@ func main() {
 			// Create a log file for the current timestamp
 			logFile, err := os.OpenFile(filename, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 			if err != nil {
-					log.Fatal(err)
+				log.Fatal(err)
 			}
 			defer logFile.Close()
 
@@ -107,8 +107,8 @@ func checkSite(site Site, logFile *os.File) {
 			// Perform TCP port check
 			conn, err := net.Dial("tcp", fmt.Sprintf("%s:%d", site.URL, site.Port))
 			if err != nil {
-					log.Println(err)
-					return
+				log.Println(err)
+				return
 			}
 			defer conn.Close()
 
