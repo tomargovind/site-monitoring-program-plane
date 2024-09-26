@@ -23,7 +23,8 @@ func main() {
 	fmt.Println("PROGRAM STARTED")
 
 	// Create a ticker for periodic checks
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(1 * time.Second)
+	defer ticker.Stop()
 
 	for {
 		select {
@@ -70,7 +71,9 @@ func main() {
                 }(site)
 			}
 
-			wg.Wait() 
+			wg.Wait()
+			
+			time.Sleep(60 * time.Second)
 		}
 	}
 }
