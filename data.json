@@ -1,0 +1,42 @@
+[
+    {
+        "site": "http://www.google.com",
+        "protocol": "HTTP",
+        "port": 80
+    },
+    {
+        "site": "www.yahoo.com",
+        "protocol": "TCP",
+        "port": 80
+    },
+    {
+        "site": "http://www.instagram.com",
+        "protocol": "UDP",
+        "port": 80
+    },
+    {
+        "site": "www.instagram.com",
+        "protocol": "TCP",
+        "port": 80
+    },
+    {
+        "site": "http://www.facebook.com",
+        "protocol": "HTTP",
+        "port": 80
+    },
+    {
+        "site": "www.facebook.com",
+        "protocol": "TCP",
+        "port": 80
+    },
+    {
+        "site": "http://www.instagram.com",
+        "protocol": "FTP",
+        "port": 80
+    },
+    {
+        "site": "www.twitter.com",
+        "protocol": "TCP",
+        "port": 80
+    }
+]
